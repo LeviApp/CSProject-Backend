@@ -24,7 +24,7 @@ module.exports = {
     client: "pg",
     connection: CON,
     migrations: {
-      tableName: "island",
+      tableName: "map",
       directory: "./migrations"
     },
     seeds: {
