@@ -17,6 +17,10 @@ server.get('/players', (req, res) => {
     });
 });
 
+server.get('/', (req, res) => {
+  res.send({message: "working"})
+})
+
 server.get('/players/:playerID', (req, res) => {
   db.select()
     .from('players')
