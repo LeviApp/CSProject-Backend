@@ -1,4 +1,10 @@
 // Update with your config settings.
+require("dotenv").config();
+const pg = require("pg");
+pg.defaults.ssl = true;
+
+
+const CON = process.env.DATABASE_URL
 
 module.exports = {
 
@@ -16,7 +22,7 @@ module.exports = {
 
   production: {
     client: "pg",
-    connection: 'postgres://localhost/island',
+    connection: CON,
     migrations: {
       tableName: "island",
       directory: "./migrations"

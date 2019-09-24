@@ -1,7 +1,7 @@
 const express = require('express');
 const server = express();
 const bodyParser = require('body-parser');
-
+require('dotenv').config()
 const db = require('./dbConfig');
 const cors = require('cors');
 const axios = require('axios');
