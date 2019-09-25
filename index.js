@@ -7,6 +7,8 @@ const cors = require('cors');
 const axios = require('axios');
 const { Client } = require('pg');
 
+server.use(cors());
+server.use(express.json());
 server.use(bodyParser())
 
 server.get('/players', (req, res) => {
@@ -127,7 +129,6 @@ class MapNode {
   }
 }
 
-server.use(express.json(), cors());
 
 const PORT = process.env.PORT || 5050;
 
