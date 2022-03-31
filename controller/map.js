@@ -1,4 +1,4 @@
-const mapService = require('../service/quote')
+const mapService = require('../service/map')
 
 class MapController {
     async placeList(req,res) {
