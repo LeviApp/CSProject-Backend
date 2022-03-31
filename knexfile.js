@@ -22,10 +22,17 @@ module.exports = {
 
   production: {
     client: "pg",
-    connection: CON,
+    
+    connection: {
+      connectionString: CON,
+      ssl: {
+        required: true,
+        rejectUnauthorized: false
+      }      
+    },
     pool: {
-      min: 0,
-      max: 50
+      min: 2,
+      max: 10
     },
     migrations: {
       tableName: "map",
