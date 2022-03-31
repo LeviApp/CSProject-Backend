@@ -23,6 +23,10 @@ module.exports = {
   production: {
     client: "pg",
     connection: CON,
+    pool: {
+      min: 2,
+      max: 10
+    },
     migrations: {
       tableName: "map",
       directory: "./migrations"
