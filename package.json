@@ -17,8 +17,7 @@
     "express": "^4.17.1",
     "global": "^4.4.0",
     "knex": "^1.0.4",
-    "pg": "^7.12.1",
-    "sqlite3": "^4.1.0"
+    "pg": "^7.12.1"
   },
   "devDependencies": {
     "helmet": "^3.21.0",
