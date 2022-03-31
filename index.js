@@ -8,7 +8,7 @@ const PORT = process.env.PORT || '3000'
 // require('dotenv/config.js')
 server.use(express.json());
 server.use(cors());
-// server.use('/api', mapRoutes);
+server.use('/api', mapRoutes);
 
 server.get('/', (req, res) => {
     res.send("{ message: 'api is working so far' }");
