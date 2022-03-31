@@ -55,7 +55,7 @@ class MapDAO {
     async editPlace(id, place) {
 
         try {
-            return db('quotes').where('id', id).first().update(place);
+            return db('map').where('id', id).first().update(place);
         }
     
         catch (err) {
