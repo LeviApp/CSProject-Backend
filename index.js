@@ -23,6 +23,10 @@ server.get('/', (req, res) => {
   res.send({message: "working"})
 })
 
+server.get('/test', (req, res) => {
+  res.send({message: "TESTING, TESTING, 1, 2"})
+})
+
 server.get('/players/:playerID', (req, res) => {
   db.select()
     .from('players')
