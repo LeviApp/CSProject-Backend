@@ -5,7 +5,7 @@ class MapService {
     placeList() {
         return mapDAO.placeList();
     }
-    quoteSingle(id) {
+    placeSingle(id) {
         return mapDAO.placeSingle(id);
     }
     // createQuote(quote) {
@@ -16,8 +16,8 @@ class MapService {
     //     return mapDAO.deleteQuote(id);
     // }
 
-    editQuote(id, quote) {
-        return mapDAO.editQuote(id, quote);
+    editPlace(id, place) {
+        return mapDAO.editPlace(id, place);
     }
 
     playerList() {

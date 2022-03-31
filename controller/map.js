@@ -92,12 +92,12 @@ class MapController {
         const {id} = req.params;
         try {
             const player = await mapService.playerSingle(id)
-            if (player) {res.json(quote)}
+            if (player) {res.json(player)}
     
             else {
                 res
                 .status(404)
-                .json({"message": "Place with that id does not exist"})
+                .json({"message": "Player with that id does not exist"})
             }
         }
 
