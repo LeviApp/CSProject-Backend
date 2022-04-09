@@ -15,4 +15,5 @@ server.get('/', (req, res) => {
     res.send("{ message: 'api is working so far' }");
   });
 
+  
 server.listen(PORT, () => console.log(`Server is running on port http://localhost:${PORT}`))
