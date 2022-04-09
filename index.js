@@ -6,6 +6,7 @@ const morgan = require('morgan')
 const PORT = process.env.PORT || '3000'
 
 require('dotenv/config.js')
+server.use(morgan("tiny"))
 server.use(express.json());
 server.use(cors());
 server.use('/api', mapRoutes);
