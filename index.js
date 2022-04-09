@@ -2,10 +2,10 @@ const express = require("express");
 const mapRoutes = require('./route/map')
 const cors = require('cors')
 const server = express();
-// const morgan = require('morgan')
+const morgan = require('morgan')
 const PORT = process.env.PORT || '3000'
 
-// require('dotenv/config.js')
+require('dotenv/config.js')
 server.use(express.json());
 server.use(cors());
 server.use('/api', mapRoutes);
