@@ -20,6 +20,6 @@
   "type": "module",
   "devDependencies": {
     "helmet": "^3.21.0",
-    "nodemon": "^1.19.2"
+    "nodemon": "^2.0.19"
   }
 }
