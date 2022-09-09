@@ -1,4 +1,4 @@
-const db = require('../dbConfig');
+import db from "../dbConfig.js";
 
 class MapDAO {
 
@@ -83,4 +83,4 @@ class MapDAO {
         }
 }
 
-module.exports = new MapDAO()
+export default new MapDAO()

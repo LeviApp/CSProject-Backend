@@ -1,4 +1,4 @@
-const mapService = require('../service/map')
+import mapService from "../service/map.js"
 
 class MapController {
     async placeList(req,res) {
@@ -107,4 +107,4 @@ class MapController {
     }
 }
 
-module.exports = new MapController()
+export default new MapController()

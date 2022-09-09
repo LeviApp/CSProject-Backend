@@ -1,15 +1,17 @@
-const express = require("express");
-const mapRoutes = require('./route/map')
-const cors = require('cors')
+import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+dotenv.config()
+import express from "express";
+import router from "./route/map.js";
+import cors from "cors";
+import morgan from "morgan";
+
 const server = express();
-const morgan = require('morgan')
 const PORT = process.env.PORT || '3000'
 
-require('dotenv/config.js')
 server.use(morgan("tiny"))
 server.use(express.json());
 server.use(cors());
-server.use('/api', mapRoutes);
+server.use('/api', router);
 
 server.get('/', (req, res) => {
     res.send("{ message: 'api is working so far' }");

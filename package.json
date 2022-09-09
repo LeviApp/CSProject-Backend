@@ -17,6 +17,7 @@
     "morgan": "^1.10.0",
     "pg": "^8.7.3"
   },
+  "type": "module",
   "devDependencies": {
     "helmet": "^3.21.0",
     "nodemon": "^1.19.2"
